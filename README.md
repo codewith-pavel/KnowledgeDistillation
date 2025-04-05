@@ -18,40 +18,6 @@ It presents a novel three-phase knowledge distillation (KD) framework for classi
 - SHAP-based explainability for medical interpretability
 - Streamlit web app for real-time NSCLC classification
 
-## Installation
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/nsclc-detection-via-kd-with-ta
-cd nsclc-detection-via-kd-with-ta
-
-# Create virtual environment and activate
-conda create -n nsclc-env python=3.8
-conda activate nsclc-env
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Download dataset (replace with actual URL)
-wget https://data-source.org/nsclc-radiomics.zip
-unzip nsclc-radiomics.zip -d data/
-```
-
-## Usage
-```bash
-# Preprocess data
-python scripts/preprocess.py --input data/ --output processed_data/
-
-# Train models
-python scripts/train.py --phase teacher
-python scripts/train.py --phase assistant
-python scripts/train.py --phase student
-
-# Run Streamlit app
-streamlit run app.py
-
-# (Optional) Share app via Ngrok
-ngrok http 8501
-```
 
 ## Dataset
 **NSCLC-Radiomics**: 51,215 CT images from 422 patients, labeled into 5 classes.
@@ -91,15 +57,6 @@ All models trained with KD (alpha = 0.7, temperature = 7).
 - Integrated **SHAP** explainability with `PartitionExplainer`
 - Find SHAP analysis in: `notebooks/xai_analysis.ipynb`
 
-## Contributing
-We welcome contributions!
-
-1. Fork the repo
-2. Create your branch (`git checkout -b feature-x`)
-3. Commit (`git commit -m 'add feature x'`)
-4. Push (`git push origin feature-x`)
-5. Open a pull request
-
 See `CONTRIBUTING.md` for details.
 
 ## License
@@ -115,12 +72,3 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for more 
   publisher={Public Library of Science}
 }
 ```
-
-## Contact
-For questions, contact:
-**Riasat Khan**  
-Email: riasat.khan@university.edu
-
----
-
-> Inspired by similar projects under [lung-cancer-detection GitHub Topics](https://github.com/topics/lung-cancer-detection).
