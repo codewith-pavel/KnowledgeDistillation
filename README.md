@@ -55,9 +55,6 @@ All models trained with KD (alpha = 0.7, temperature = 7).
 
 ## Explainable AI
 - Integrated **SHAP** explainability with `PartitionExplainer`
-- Find SHAP analysis in: `notebooks/xai_analysis.ipynb`
-
-See `CONTRIBUTING.md` for details.
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
